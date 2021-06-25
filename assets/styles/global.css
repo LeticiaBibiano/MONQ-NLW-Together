@@ -12,7 +12,10 @@ html{
     --red: #FF0040;
     --bg: #ffeef8;
     --pink: #fa60ff;
-    
+    --blue-opacity: rgb(230, 247, 255);
+    --grey-light: rgb(197, 197, 197);
+    --grey-grey: rgb(112, 111, 111);
+
     font-size: 6.25%;
 }
 
@@ -30,6 +33,7 @@ body, button, input, textarea{
 .logo{
     font-family: 'Big Shoulders Stencil Display', cursive;
     font-size: 60rem;
+    color: rgb(0, 7, 73);
 }
 
 .content{
@@ -87,6 +91,20 @@ button.outlined,
     background: var(--bg);
     color: var(--pink);
     border: 2rem solid var(--pink);
+}
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white)
+
+}
+
+.button.grey,
+.button.grey{
+    background: var(--grey-light);
+    color: var(--grey-grey);
+
 }
 
 .content header{

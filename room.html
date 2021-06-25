@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MonQ! - Perguntas e Respostas</title>
+
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@700&family=Open+Sans:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+ 
+        <!-- CSS  -->
+        <link rel="stylesheet" href="./assets/styles/room.css">
+        <link rel="stylesheet" href="./assets/styles/global.css">  
+        <link rel="stylesheet" href="./assets/styles/modal.css">  
+
+    </head>
+
+    <body>
+        <div id="home" class="content">
+            <header class="room">
+                <a href="#">
+                    <h1 class="logo">Mon Q!</h1>
+                </a>                
+
+                <div class="buttons">
+                    <div class="buttons outlined">
+                        #323243
+                        <img src="/assets/img/block-icon.png" alt="copiar numero da sala"/>
+                    </div>                    
+                        <a href="#" class="buttons button">
+                            <img src="/assets/img/icon-group.png" alt="criar uma sala">
+                            Criar Sala
+                        </a>                    
+                </div>
+            </header>
+
+            <main>
+                <section id="question-form">
+                    <h2>Faça sua pergunta:</h2>
+                    <form action="">
+                        <label class="sr-only" for-id="question">o que você quer perguntar</label>
+                        <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+
+                        <footer>
+                            <div>
+                                <img src="/assets/img/lock.png" alt="cadeado">
+                                Esta pergunta é anônima.
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section id="questions">
+                    <h2 class="sr-only">Perguntas da comunidade</h2>
+
+                    <div class="questions">
+
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="/assets/img/monq-user.png" alt="avatar usuário">
+                                </div>
+                                <div class="question">
+                                    <p>Qual a diferença entre const, var e let no JavaScript?</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <a href="#" class="check">
+                                    <img src="/assets/img/check.png" alt="marcar como lida">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="/assets/img/trash.png" alt="excluir">
+                                    Excluir
+                                </a>
+                            </div>
+                       </div>
+
+                       <div class="question-wrapper">
+                        <div class="question-content">
+                            <div class="user">
+                                <img src="/assets/img/monq-user.png" alt="avatar usuário">
+                            </div>
+                            <div class="question">
+                                <p>O que é JavaScript?</p>
+                            </div>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="check">
+                                <img src="/assets/img/check.png" alt="marcar como lida">
+                                Marcar como lida
+                            </a>
+                            <a href="#" class="delete">
+                                <img src="/assets/img/trash.png" alt="excluir">
+                                Excluir
+                            </a>
+                        </div>
+                   </div>
+
+                   <div class="question-wrapper">
+                    <div class="question-content">
+                        <div class="user">
+                            <img src="/assets/img/monq-user.png" alt="avatar usuário">
+                        </div>
+                        <div class="question">
+                            <p> </p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="check">
+                            <img src="/assets/img/check.png" alt="marcar como lida">
+                            Marcar como lida
+                        </a>
+                        <a href="#" class="delete">
+                            <img src="/assets/img/trash.png" alt="excluir">
+                            Excluir
+                        </a>
+                    </div>
+               </div>
+
+                   <!-- Question read -->
+
+                   <div class="question-wrapper read">
+                    <div class="question-content">
+                        <div class="user">
+                            <img src="/assets/img/banana.png" alt="avatar usuário">
+                        </div>
+                        <div class="question">
+                            <p>Quais linguagens de programação um dev front-end deve saber?</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <a href="#" class="delete">
+                            <img src="/assets/img/trash.png" alt="excluir">
+                            Excluir
+                        </a>
+                    </div>
+               </div>
+                    </div>
+  
+                </section>
+            </main>
+        </div>
+
+        <!-- MODAL -->
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir Pergunta</h2>
+                <p>Tem certeza que você deseja excluir essa pergunta?</p>
+
+                <form>
+                    <label class="sr-only" for-id="password">Digite sua senha administradora</label>
+                    <input type="password" id="password" name="password" placeholder="Digite a senha administradora">
+
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

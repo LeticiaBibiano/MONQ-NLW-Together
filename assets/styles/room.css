@@ -1,0 +1,144 @@
+.content{
+    max-width: min(1120rem, 90%);
+}
+
+.room{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons{
+    display: flex;
+}
+
+.buttons:nth-child(1){
+    margin-right: 8rem;
+    padding: 13rem 16rem;
+    align-items: center;
+}
+
+.buttons:nth-child(1) img{
+    margin-left: 5rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.buttons:nth-child(2){
+    padding: 13rem 32rem;
+}
+
+.buttons:nth-child(2) img{
+    margin-left: 5rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+#question-form h2{
+    font-family: 'Poppins';
+    font-size: 28px;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 24rem;
+    line-height: 42rem;
+}
+
+#question-form form{
+    border: 2rem solid var(--black);
+    padding: 16rem;
+    border-radius: 0 8rem 8rem 8rem;
+    margin-bottom: 16rem;
+}
+
+#question-form textarea{
+    resize: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+}
+
+#question-form form textarea::placeholder{
+    color: rgb(172, 172, 172)
+}
+
+#question-form form footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-form form footer > div{
+    display: flex;
+    align-items: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14rem;
+}
+
+#question-form form footer > div img{
+    opacity: 0.3;
+    margin-right: 5rem;
+}
+
+#question-form form footer button{
+    height: auto;
+    padding: 8rem 24rem;
+    line-height: 24rem;
+}
+
+.user img{
+    height: 52rem;
+    width: 52rem;
+}
+
+/* Questions & answers */
+
+.question-wrapper{
+    background: rgba(255, 192, 203, 0.705);
+    margin-bottom: 8rem;
+    border-radius: 0 8rem 8rem 8rem;
+    padding: 24rem ;
+}
+
+.question-wrapper .question-content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content p{
+  margin-left: 16rem;
+  word-break: break-word;
+  display: flex;
+  align-items:center;
+  min-height: 5rem;
+}
+
+.question-wrapper .actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a{
+    display: flex;
+    align-items: center;
+    margin-left: 24rem;
+}
+
+.question-wrapper .actions > a > img{
+    height: 20rem;
+    width: 20rem;  
+    margin-right: 5rem;  
+}
+
+.question-wrapper .actions .check img{
+    margin-bottom: 5rem;
+}
+
+/* Question Read */
+
+.question-wrapper.read{
+    background: var(--blue-opacity);
+}

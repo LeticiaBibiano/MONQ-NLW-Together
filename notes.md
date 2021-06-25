@@ -40,3 +40,8 @@ Experimente usar a tecla ALT+TAB para alternar facilmente entre suas telas duran
 NO CSS:
 > :nth-child(#)  <= SELECIONA APENAS OS "FILHOS" ESPECIFICADOS POR NÚMEROS (1, 2, 3...). 
 Assim, podemos estilizar apenas as tags filhas que queremos, sem afetar outras que não queremos.
+
+
+>>DICA ATALHOS VS CODE <<
+
+<TAB> PARA ARRUMAR A IDENTAÇÃO DO SEU CÓDIGO (MOVER PARA A DIREITA), PARA MOVER PARA A ESQUERDA = <SHIFT+TAB>
